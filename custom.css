@@ -96,6 +96,9 @@ footer {
     display: block;
     border: 3px black;
   }
+  #ic1,#ic2,#ic3 {
+    display: none;
+  }
   #head {
     display: none;
   }
