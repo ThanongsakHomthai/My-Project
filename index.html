@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dailyzer</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="custom.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons?d=gallery&q=line">
+ 
+</head>
+<body>
+ 
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-md navbar-light ">
+      <div class="container">
+        <a id="logo" href="#" class="navbar-brand" style="font-family: 'Times New Roman', Times, serif;" >Dailyzer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+								
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav ml-auto ">
+            <li id="btUp1" class=" nav-item text-center ">
+              <button  class="btn btn-outline-success " style="border: none; cursor: grabbing;" type="radio" onclick="img(2)">HOME</button>
+            </li>
+            <li id="btUp2" class="nav-item text-center">
+              <button class="btn btn-outline-success " style="border: none; cursor: grabbing;"  type="radio" onclick="img(0)">SELF CHECK</button>
+            </li>
+            <li id="btUp3" class=" nav-item text-center ">
+              <button class="btn btn-outline-success " style="border: none; cursor: grabbing;" type="radio" onclick="img(1)">REPROCESSSING</button>
+            </li>
+            <li class=" nav-item text-center ml-3">
+              <a href="https://web.facebook.com/aitechnologythailand/" style="color: rgb(0,0,0); cursor: grabbing;"><i class="fa fa-facebook fa-fw" ></i>Facebook</a><br><br>
+            </li>
+            <li class=" nav-item text-center ml-3">
+              <a href="http://line.me/ti/p/%40gmo4930r" style="color: rgb(0,0,0); cursor: grabbing;" > <i class="fab fa-line" ></i>  Line</a><br><br>     
+            </li>
+            <li class="nav-item text-center ml-3">
+              <a href="https://www.youtube.com/channel/UCNVGBYWl-3uK_dRwPtxpVhQ" style="color: rgb(0,0,0); cursor: grabbing;"><i class="fa fa-youtube fa-fw" ></i> Youtube</a>       
+            </li>  
+            <li  class=" nav-item text-center ml-3">
+              <button id="sigUp" class="btn btn-outline-success" style="cursor: grabbing; color: rgb(0,0,0); cursor: grabbing; border-color: black; background-color: aquamarine;" type="submit">Sign Up</button>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  
+  <!-- Head -->
+
+    <div class="text-center">
+      <div class="container" id="head">
+        <div class="row mt-5 mb-5">
+          <div class="col mb2">
+            <label id="radio0">
+               <input id="inradio0" class="inradio0" type="radio" name="like" onclick="img(2)" checked>
+                <span class="home" style="cursor: grab;" >HOME</span>
+             </label>
+         </div>
+          <div class="col mb2 ">
+              <label id="radio1">
+                <input id="inradio1" class="inradio1" type="radio" name="like" onclick="img(0)" >
+                <span class="yes" style="cursor: grab;" > SELF CHECK</span>
+              </label>
+          </div>
+          <div class="col mb2">
+             <label id="radio2">
+                <input id="inradio2" class="inradio2" type="radio" name="like" onclick="img(1)">
+                 <span class="no"style="cursor: grab;" >REPROCESSSING</span>
+              </label>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    
+
+   
+   <!-- DisShow -->
+    <div class="show" ></div>
+      <div id="myimg0">
+        <header class="text-white text-center">
+          <div class="container" id="show" >
+            <div class="row ">
+              <div class="col-xl-9 mx-auto">
+                <h1 class="mb-5 mt-5" style="color: #CCFFCC ;border-color: grey; font-family: 'Times New Roman', Times, serif; font-size: 90px; text-shadow: black 0.1em 0.1em .1em">My Dailyzer Project</h1>
+              </div>
+             <!-- <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                <form action="">
+                  <div class="row d-flex">
+                    <div class="col-12 col-md-9 mb-2 mb-md-0">
+                      <input  type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <button type="submit" class="btn btn-block btn-lg btn-primary">Sign Up</button>
+                    </div> 
+                  </div>
+                </form>
+              </div>-->
+            </div>
+          </div>
+        </header>
+        <br><br>
+      </div>
+
+      <div id="myimg1">
+        <div class="container">
+          <div class="row text-center" >
+              <div class="row text-center mt-5 ml-0" >
+                <label id="selLabe1" for="text">SELF CHECK</label>
+                  <div class="col text-center mt-3 mx-auto mr-2" id="selColL" >
+                    <label id="selLabe2" for="text">% TCV</label>
+                  </div>
+                  <div class="col text-center mt-3 mx-auto"id="selColR"> 
+                    <label id="selLabe3" for="text">Tank</label>
+                  </div>
+              </div>
+              <div class="row text-center mt-5 ml-0">
+                  <div class="col text-center" >
+                    <span id="selTcv">00</span>
+                  </div>
+                  <div class="col text-center" >
+                    <span id="selTank">00</span>
+                  </div>
+              </div>
+              <div class="row text-center mt-3 ml-0" >
+                <button id="selStart" class="mt-3">Start</button>
+              </div>   
+          </div>
+
+
+
+        </div>
+      
+      </div> 
+      
+  
+      <div id="myimg2">
+        <div class="container">
+          <div class="row " >
+              <div class="row text-center mt-5 ml-0" >
+                <label id="repLabel" for="text">REPROCESSSING</label>
+                  <div class="col text-center mt-3 mx-auto mr-2" id="selColL" >
+                    <label id="repLabe2" for="text">% TCV</label>
+                  </div>
+                  <div class="col text-center mt-3 mx-auto"id="selColR"> 
+                    <label id="repLabe3" for="text">Tank</label>
+                  </div>
+              </div>
+              <div class="row text-center mt-5 ml-0">
+                  <div class="col text-center" >
+                    <span id="repTcv">00</span>
+                  </div>
+                  <div class="col text-center" >
+                    <span id="repTank">00</span>
+                  </div>
+              </div>
+              <div class="row text-center mt-3 ml-0" >
+                <button id="repStart" class="mt-3 ">Start</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Footer -->
+
+    <footer class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="text-muted">&copy; Copyright © 2020 A.I. GROUP.  All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+   
+    
+    <script>
+      function img(x)
+   
+          {if(x==0)
+              document.getElementById('myimg1').style.display='block';
+        
+           
+          else document.getElementById('myimg1').style.display='none';
+
+
+          if(x==1)  document.getElementById('myimg2').style.display='block';
+        
+           
+          else document.getElementById('myimg2').style.display='none';
+
+
+          if(x==2)  document.getElementById('myimg0').style.display='block';
+        
+           
+          else document.getElementById('myimg0').style.display='none';
+
+
+               
+          return;
+      }
+      </script>  
+
+    <!-- Firebase Libraries -->
+
+    <!-- Jquery CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-database.js"></script> 
+
+    <script src="bootstrap.min.js"></script>
+    <script src="custom.js"></script>
+</body>
+</html>
